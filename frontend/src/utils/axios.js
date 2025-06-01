@@ -3,8 +3,9 @@ import axios from 'axios';
 import { getToken, removeToken } from './auth';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://movie-review-backend-yq37.onrender.com/api',
 });
+
 
 // Attach token to every request
 api.interceptors.request.use(
